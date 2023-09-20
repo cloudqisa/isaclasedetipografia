@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 20pt;
+    /*font-family:'liberation', serif; */
+    /*font-family: 'liberation', sans-serif; */
+    font-family:'Istok Web', sans-serif;
+    line-height: 32pt;
+    background-color: floralwhite;
+    
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#hero{
+
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .45;
+    z-index: -1;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 52pt;
+    /*font-family:'arimo', serif; */
+    /*font-family: 'pt serif' , serif; */
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    color:white;
+}
+
+
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+#body .body{
+    flex-direction: column;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+}
+
+#body .body-top{
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#body .body-bottom{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 275px;
+    padding-right:275px;
+    padding-top: 20px;
+}
+#body h1 {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 44px;
+    /*position: relative;*/
+    color:darkolivegreen;
+    /*font-family:'arimo', serif; */
+    /*font-family: 'pt serif' , serif; */
+    font-family:'Playfair Display', serif ;
+    padding-bottom: 18px;
+}
+#body h2 {
+    display: block;
+    width: fit-content;
+    font-size: 25px;
+    position: relative;
+    color:#735237;
+    /*font-family:'arimo', serif; */
+    /*font-family: 'pt serif' , serif; */
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+#body .body-bottom{
+    font-size: 18px;
+    line-height: 29px;
+}
+
